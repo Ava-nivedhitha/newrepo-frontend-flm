@@ -23,7 +23,7 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install js-yaml
+          npm install
           npm run build --if-present
           npm run test --if-present
       
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'FLM-NP-EUS-WS2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_545DB14A10AF46C4BC317062ED17D238 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D36FEAF84EA14BBF9783325C4167E6F3 }}
           package: .
